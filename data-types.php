@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * 
+ * Data Types in PHP
+ * 
+ */
+
 // string
 $name = "Mofazzal Hossain";
 echo "<h2>My name is: " . $name . "</h2>";

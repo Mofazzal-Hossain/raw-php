@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * 
+ * Arithmatic Operator in PHP
+ * 
+ */
+
+
 $num1 = 30;
 $num2 = 10;
 

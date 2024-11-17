@@ -1,34 +1,46 @@
 <?php
+/**
+ * 
+ * Demonstrating Different Types of Loops in PHP
+ * 
+ */
 
-$a = 1;
-$num = 10;
-$x = 2;
-$names = array('Riyad', 'Rajon', 'Mofazzal', 'Khan');
+// Initialize variables
+$a = 1;               
+$num = 10;          
+$x = 2;               
+$names = array('Riyad', 'Rajon', 'Mofazzal', 'Khan'); 
 
-// while
+
+// While Loop: Loops as long as the condition is true
 echo '<h2> While Loop</h2>';
-while ($a <= 10) {
-    echo $a . ') Hello World! While Loop <br>';
-    $a++;
+
+while ($a <= 10) {  
+    echo $a . ') Hello World! While Loop <br>';  
+    $a++; 
 }
 
-// do while
+// Do-While Loop: Executes at least once before checking the condition
 echo '<h2> Do While Loop</h2>';
+
 do {
-    echo $x . ') Hello World! Do While Loop <br>';
-    $x++;
-}while($x <= 10);
+    echo $x . ') Hello World! Do While Loop <br>'; 
+    $x++; 
+} while ($x <= 10); 
 
-// for loop
+// For Loop: Ideal when the number of iterations is known
 echo '<h2> For Loop </h2>';
-for ($i = 1; $i <= $num; $i++) {
-    echo $i . ') Hello World! For Loop <br>';
+
+for ($i = 1; $i <= $num; $i++) {  
+    echo $i . ') Hello World! For Loop <br>';  
 }
 
 
-// foreach loop
+// Foreach Loop: Specialized for looping through arrays
 echo '<h2> Foreach Loop </h2>';
-foreach($names as $key =>  $name){
-    $key++;
-    echo $key . ') ' . $name . '<br>';
+
+foreach ($names as $key => $name) { 
+    $key++; 
+    echo $key . ') ' . $name . '<br>';  
 }
+?>
