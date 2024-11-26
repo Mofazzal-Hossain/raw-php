@@ -5,7 +5,8 @@
  */
 
 // Function to print a simple greeting message
-function sayHello() {
+function sayHello()
+{
     echo "Hello Everyone!!<br>";
 }
 
@@ -13,7 +14,8 @@ function sayHello() {
 sayHello();
 
 // Function to calculate and print the sum of two numbers
-function sum($num1, $num2) {
+function sum($num1, $num2)
+{
     echo "Total Summation: " . ($num1 + $num2) . '<br>';
 }
 
@@ -21,7 +23,8 @@ function sum($num1, $num2) {
 sum(15, 20);
 
 // Function to print a person's full name with default values for first and last name
-function names($fname = 'John', $lname = 'Doe') {
+function names($fname = 'John', $lname = 'Doe')
+{
     echo "My name is: " . $fname . ' ' . $lname . '<br>';
 }
 
@@ -32,7 +35,8 @@ names('Mofazzal', 'Hossain');
 names();
 
 // Function to subtract two numbers and return the result
-function sub($num1, $num2) {
+function sub($num1, $num2)
+{
     $sub = $num1 - $num2;
     return $sub;
 }
@@ -42,7 +46,8 @@ $substract = sub(40, 20);
 echo "Subtraction between 2 numbers is: {$substract}<br>";
 
 // Function to calculate the total score in three subjects
-function subjects($m, $e, $b) {
+function subjects($m, $e, $b)
+{
     $subject = $m + $e + $b;
     return $subject;
 }
@@ -52,7 +57,8 @@ $total = subjects(80, 60, 50);
 echo "Total number is: {$total}<br>";
 
 // Function to calculate and display the percentage of the total score
-function percentage($total) {
+function percentage($total)
+{
     $percentage = $total / 3;
     echo 'Total percentage between the subjects: ' . $percentage . '%';
 }
@@ -61,3 +67,4 @@ function percentage($total) {
 percentage($total);
 
 ?>
+
