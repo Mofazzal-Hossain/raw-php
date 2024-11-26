@@ -2,10 +2,11 @@
 
 /**
  * 
- * Multi Dimensional Array in PHP
+ * List function  in PHP
  * 
  */
 
+//  Initialize an array
 $employees = [
     [1, 'Mofazzal', 'Developer', 20, 15000],
     [2, 'Khan', 'UI/UX', 24, 25000],
@@ -27,6 +28,7 @@ $employees = [
         </tr>
     </thead>
     <tbody style="text-align: center;">
+        <!-- Using list function -->
         <?php foreach ($employees as list($id, $name, $designation, $age, $salary)): ?>
             <tr>
                 <td><?php echo $id ?></td>
@@ -41,6 +43,7 @@ $employees = [
 
 <?php
 
+// Initialize an array
 $marks = [
     "Rajon" => [
         'math' => 80,
@@ -75,10 +78,12 @@ $marks = [
         </tr>
     </thead>
     <tbody style="text-align: center;">
+        <!-- Using foreach -->
         <?php foreach ($marks as $name => $subjects):?>
+            <!-- Using list function -->
+            <?php list($math,$chemistry,$physics,$english) = array_values($subjects); ?>
             <tr>
                 <td><?php echo $name ?></td>
-                <?php list($math,$chemistry,$physics,$english) = array_values($subjects); ?>
                 <td><?php echo $math ?></td>
                 <td><?php echo $chemistry ?></td>
                 <td><?php echo $physics ?></td>
